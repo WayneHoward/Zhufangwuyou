@@ -19,22 +19,14 @@ $(function(){
     });
 
    
-    var map = new BMapGL.Map("container");
     // 创建地图实例 
-    var point = new BMapGL.Point(116.404, 39.915);
+    var map = new BMapGL.Map("container");
     // 创建点坐标 
-    map.centerAndZoom(point, 16);
+    var point = new BMapGL.Point(116.404, 39.915);
     // 初始化地图，设置中心点坐标和地图级别 
-
-    //添加地图类型控件
-    // map.addControl(new BMapGL.MapTypeControl({
-    //   mapTypes:[
-    //           BMAP_NORMAL_MAP,
-    //           BMAP_HYBRID_MAP
-    //       ]}));
+    map.centerAndZoom(point, 17);
     //开启鼠标滚轮缩放
     map.enableScrollWheelZoom(true); 
-
     //点击获取当前位置
     touch.on($('.orientation'),'tap',function(e){
         var e = e || window.event;
@@ -45,7 +37,7 @@ $(function(){
         $('.orientation .i1').hide();
         $('.orientation .i2').show();
         setTimeout(function(){
-          var geoc = new BMapGL.Geocoder();
+          // var geoc = new BMapGL.Geocoder();
           var geolocation = new BMapGL.Geolocation();
           geolocation.getCurrentPosition(function(r){
           　　if(this.getStatus() == BMAP_STATUS_SUCCESS){
