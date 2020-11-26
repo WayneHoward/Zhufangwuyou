@@ -12,7 +12,7 @@
     <script src="./js/jquery-3.5.1.js"></script>
     <script src="./js/public.js"></script>
     <script src="./js/detail.js"></script>
-    <script type="text/javascript" src="https://api.map.baidu.com/api?v=1.0&type=webgl&ak=5OEPochRvW3HpUWOdrbbvq3mPw00A0Vq"></script>
+    <script type="text/javascript" src="https://api.map.baidu.com/api?v=2.0&type=webgl&ak=5OEPochRvW3HpUWOdrbbvq3mPw00A0Vq"></script>
     <script src="./swiper/swiper-bundle.min.js"></script>
 </head>
 <body>
@@ -173,6 +173,10 @@
         </div>
         <div class="map">
             <div id="container"></div>
+            <div class="orientation">
+                <img class="i1" src="./images/gps.png" alt="">
+                <img class="i2" src="./images/loading.gif" style="display: none;" alt="">
+            </div>
         </div>
     </div>
     <!-- ---------------------------------位置及周边 结束 -->
@@ -247,8 +251,5 @@
         </div>
     </div>
     <!-- ---------------------------------底部 结束 -->
-    <div>  
-        <span id="load_geolocation">点击获取位置</span>  
-    </div>  
 </body>
 </html>

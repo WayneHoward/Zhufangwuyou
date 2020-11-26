@@ -247,6 +247,7 @@ body {
   background-color: white;
   padding: 0 2rem;
   box-sizing: border-box;
+  position: relative;
 }
 .gps .title {
   width: 100%;
@@ -266,6 +267,15 @@ body {
 .gps .map #container {
   margin-top: 2rem;
   height: 15rem;
+}
+.gps .map .orientation {
+  position: absolute;
+  z-index: 99;
+  top: 8rem;
+  right: 2rem;
+}
+.gps .map .orientation img {
+  height: 3rem;
 }
 .recommend {
   width: 100%;

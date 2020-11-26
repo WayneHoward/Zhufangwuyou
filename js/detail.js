@@ -20,29 +20,47 @@ $(function(){
 
    
     var map = new BMapGL.Map("container");
-        // 创建地图实例 
-        var point = new BMapGL.Point(113.6871, 34.8103);
-        // 创建点坐标 
-        map.centerAndZoom(point, 20);
-        // 初始化地图，设置中心点坐标和地图级别 
+    // 创建地图实例 
+    var point = new BMapGL.Point(116.404, 39.915);
+    // 创建点坐标 
+    map.centerAndZoom(point, 16);
+    // 初始化地图，设置中心点坐标和地图级别 
 
-        $("#load_geolocation").text("正在获取位置......");  
-        //创建百度地图控件  
-        var geolocation = new BMap.Geolocation();  
-        geolocation.getCurrentPosition(function(r){  
-            if(this.getStatus() == BMAP_STATUS_SUCCESS){  
-                //以指定的经度与纬度创建一个坐标点  
-                var pt = new BMap.Point(r.point.lng,r.point.lat);  
-                //创建一个地理位置解析器  
-                var geoc = new BMap.Geocoder();  
-                geoc.getLocation(pt, function(rs){//解析格式：城市，区县，街道  
-                    var addComp = rs.addressComponents;  
-                    $("#load_geolocation").text(addComp.city + ", " + addComp.district + ", " + addComp.street);  
-                });      
-            }  
-            else {  
-                $("#load_geolocation").text('定位失败');  
-            }          
-        },{enableHighAccuracy: true})//指示浏览器获取高精度的位置，默认false  
+    //添加地图类型控件
+    // map.addControl(new BMapGL.MapTypeControl({
+    //   mapTypes:[
+    //           BMAP_NORMAL_MAP,
+    //           BMAP_HYBRID_MAP
+    //       ]}));
+    //开启鼠标滚轮缩放
+    map.enableScrollWheelZoom(true); 
 
+    //点击获取当前位置
+    touch.on($('.orientation'),'tap',function(e){
+        var e = e || window.event;
+        e.stopPropagation();
+        e.cancelBubble = true;
+        e.preventDefault();
+        e.returnValue = false;
+        $('.orientation .i1').hide();
+        $('.orientation .i2').show();
+        setTimeout(function(){
+          var geoc = new BMapGL.Geocoder();
+          var geolocation = new BMapGL.Geolocation();
+          geolocation.getCurrentPosition(function(r){
+          　　if(this.getStatus() == BMAP_STATUS_SUCCESS){
+          　　　　var mk = new BMapGL.Marker(r.point);
+          　　　　map.addOverlay(mk);
+          　　　　map.panTo(r.point);
+                $('.orientation .i2').hide();
+                $('.orientation .i1').show();
+          　　　　console.log("当前位置经度为:"+r.point.lng+"纬度为:"+r.point.lat);
+          　　} else {
+                $('.orientation .i2').hide();
+                $('.orientation .i1').show();
+          　　　　console.log('无法定位到您的当前位置，导航失败，请手动输入您的当前位置！'+this.getStatus());
+          　　}
+          },{enableHighAccuracy: true});
+        },100);
+    });
 });
