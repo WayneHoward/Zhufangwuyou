@@ -1,0 +1,90 @@
+html,body{
+    background-color: rgb(245,245,245);
+}
+.user{
+    width: 100%;
+    height: 18.5rem;
+    background-image: url(./../images/bg1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 0.5rem 1rem;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    .ico{
+        // position: absolute;
+        // right: 0rem;
+        margin-left: 2rem;
+        a{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            img{
+                width: 2.2rem;
+            }
+            span{
+                font-size: 1.2rem;
+                color: white;
+            }
+        }
+    }
+    .head{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 1.5rem;
+        img{
+            height: 6rem;
+            width: 6rem;
+        }
+        button{
+            outline: none;
+            margin-top: 1rem;
+            border-radius: 0.5rem;
+            border: 1px solid white;
+            padding: 0.5rem 2rem;
+            color: white;
+            font-size: 2rem;
+            background-color: rgba(255,255,255,0);
+        }
+    }
+}
+.content{
+    height: 20rem;
+    width: 100%;
+    background-color: white;
+    box-sizing: border-box;
+    padding-left: 4rem;
+    li{
+        font-size: 1.6rem;
+        box-sizing: border-box;
+        width: 100%;
+        height: 25%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid rgb(231, 230, 230);
+        color: rgb(50, 50, 50);
+        img{
+            height: 1.5rem;
+            margin-right: 2rem;
+        }
+        &:last-child{
+            border: none;
+        }
+        .like{
+            position: absolute;
+            left: 1.5rem;
+            img{
+                height: 1.6rem;
+            }
+        }
+    }
+}

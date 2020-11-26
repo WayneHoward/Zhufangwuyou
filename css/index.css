@@ -1,0 +1,240 @@
+html,
+body {
+  background-color: #f5f5f5;
+}
+.banner {
+  width: 100%;
+  height: 22.5rem;
+  background-image: url(../images/banner.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  font-size: 1.2rem;
+}
+.banner input {
+  font-size: 1.2em;
+  width: 90%;
+  height: 3rem;
+  border-top: 0.2rem solid gray;
+  border-right: 0.2rem solid #cbcbcb;
+  border-bottom: 0.2rem solid #cbcbcb;
+  border-left: 0.2rem solid gray;
+  border-radius: 1rem;
+  margin-bottom: 0.5rem;
+  background-image: url(../images/seach.jpg);
+  background-repeat: no-repeat;
+  background-position: 1rem 0.6rem;
+  background-size: auto 2rem;
+  text-indent: 3em;
+}
+.nav {
+  font-size: 1.2em;
+  height: 11rem;
+  width: 100%;
+  color: white;
+  background-color: #ff8a00;
+  display: flex;
+  margin-bottom: 1rem;
+}
+.nav .icon {
+  font-size: 1.2em;
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.nav .icon img {
+  width: 6rem;
+  margin-bottom: 0.5rem;
+}
+.banner2 {
+  width: 100%;
+  height: 26rem;
+  background-image: url(../images/banner2.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 1rem;
+}
+.hot {
+  font-size: 1.2rem;
+  width: 100%;
+  background-color: white;
+}
+.hot .title {
+  width: 100%;
+  height: 6rem;
+  color: white;
+  background-color: #ff8a00;
+  box-sizing: border-box;
+  padding-left: 2rem;
+  font-weight: bold;
+  font-size: 1.4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.hot ul {
+  padding: 0 2rem;
+  border-bottom: 1px solid #c9c9c9;
+  margin-bottom: 1rem;
+}
+.hot ul li {
+  box-sizing: border-box;
+  padding: 3rem 0;
+  height: 14rem;
+  width: 100%;
+  display: flex;
+  position: relative;
+  border-bottom: 1px solid #d80001;
+}
+.hot ul li .left {
+  margin-right: 1rem;
+}
+.hot ul li .left img {
+  width: 8.51rem;
+}
+.hot ul li .right {
+  overflow: hidden;
+}
+.hot ul li .right h2 {
+  font-size: 1.6rem;
+  font-weight: normal;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 0.5rem;
+}
+.hot ul li .right .bt {
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+}
+.hot ul li .right .bt .int .p1 {
+  margin-bottom: 0.5rem;
+}
+.hot ul li .right .bt .int .p2 {
+  color: #a4a4a4;
+}
+.hot ul li .right .bt .price {
+  text-align: right;
+}
+.hot ul li .right .bt .price .p1 {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #ff8a00;
+  margin-bottom: 0.5rem;
+}
+.hot ul li .right .bt .price .p2 {
+  color: #a4a4a4;
+}
+.hot ul li .tab {
+  position: absolute;
+  top: 10.5rem;
+  left: 9.5rem;
+  display: flex;
+  color: #92a0b2;
+}
+.hot ul li .tab p {
+  font-size: 1.2rem;
+  margin-right: 1rem;
+  padding: 0.1rem;
+  background-color: #f5f7f9;
+}
+.hot ul li:last-child {
+  border-bottom: none;
+}
+.attention {
+  position: relative;
+  height: 19.5rem;
+}
+.attention .title {
+  width: 100%;
+  height: 5.5rem;
+  background-color: white;
+  border-bottom: 1px solid #ff8a00;
+  font-size: 1.8rem;
+  color: #ff8a00;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.attention .title p {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.attention .title p:nth-child(1) {
+  border-bottom: 2px solid #ff8a00;
+}
+.attention .title p:nth-child(2) {
+  color: #848484;
+}
+.attention .content {
+  position: absolute;
+  height: 14rem;
+  width: 100%;
+  background-color: white;
+  padding: 2.5rem 0.5rem;
+  box-sizing: border-box;
+  font-size: 1.4rem;
+  color: #717171;
+  display: flex;
+  justify-content: space-around;
+}
+.attention .content ul li {
+  margin-bottom: 0.5rem;
+}
+.ad {
+  position: fixed;
+  z-index: 99;
+  bottom: 0;
+  width: 100%;
+  height: 6rem;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding-left: 2rem;
+}
+.ad .left {
+  display: flex;
+  align-items: center;
+}
+.ad .left img {
+  height: 3.2rem;
+}
+.ad .middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+}
+.ad .middle .p1 {
+  font-size: 1.8rem;
+}
+.ad .middle .p2 {
+  font-size: 1.5rem;
+}
+.ad .right {
+  display: flex;
+  align-items: center;
+  background-color: #ff8a00;
+  height: 6rem;
+  color: white;
+  font-size: 1.5rem;
+  padding: 0 1rem;
+}
+.ad .close {
+  position: absolute;
+  left: 0;
+}
+.ad .close img {
+  height: 2rem;
+}
