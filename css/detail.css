@@ -26,6 +26,7 @@ body {
   background-color: white;
   margin-bottom: 1.5rem;
   padding: 2rem 2rem;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   border-bottom: 1px solid #e3e3e3;
 }
@@ -70,12 +71,19 @@ body {
   margin-bottom: 1.5rem;
   border-bottom: 1px solid #e3e3e3;
   padding: 0 2rem;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 .detailIntro li {
   overflow: hidden;
   height: 11%;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-align-items: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   border-bottom: 1px solid #d2d2d2;
   font-size: 1.4rem;
@@ -93,7 +101,13 @@ body {
   color: #424242;
 }
 .detailIntro li:last-child {
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-justify-content: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   border: none;
   color: #919191;
@@ -106,13 +120,20 @@ body {
   border-bottom: 1px solid #e3e3e3;
   background-color: white;
   padding: 0 2rem;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 .feature .title {
   width: 100%;
   height: 5.5rem;
   border-bottom: 1px solid #e3e3e3;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-align-items: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 .feature .title h2 {
@@ -121,7 +142,13 @@ body {
 }
 .feature .content {
   line-height: 2.5rem;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-align-items: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   color: #424242;
   font-size: 1.4rem;
@@ -134,8 +161,17 @@ body {
   font-size: 1.4rem;
   width: 100%;
   height: 4.8rem;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-justify-content: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-align-items: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   overflow: hidden;
 }
@@ -147,13 +183,20 @@ body {
   border-bottom: 1px solid #e3e3e3;
   background-color: white;
   padding: 0 2rem;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 .units .title {
   width: 100%;
   height: 5.5rem;
   border-bottom: 1px solid #e3e3e3;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-align-items: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 .units .title h2 {
@@ -168,10 +211,19 @@ body {
   overflow: hidden;
   height: 50%;
   border-bottom: 1px solid #f4a165;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
   display: flex;
 }
 .units .list li .d1 {
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-align-items: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 .units .list li .d1 img {
@@ -210,14 +262,22 @@ body {
   border-bottom: 1px solid #e3e3e3;
   background-color: white;
   padding: 0 2rem;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 .school li {
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   width: 100%;
   height: 14.2587%;
   border-bottom: 1px solid #e3e3e3;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-align-items: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   font-size: 1.4rem;
 }
@@ -233,7 +293,13 @@ body {
   font-weight: bold;
 }
 .school li:last-child {
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-justify-content: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   border: none;
   color: #919191;
@@ -246,6 +312,7 @@ body {
   border-bottom: 1px solid #e3e3e3;
   background-color: white;
   padding: 0 2rem;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   position: relative;
 }
@@ -253,7 +320,13 @@ body {
   width: 100%;
   height: 5.5rem;
   border-bottom: 1px solid #e3e3e3;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-align-items: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 .gps .title h2 {
@@ -284,13 +357,20 @@ body {
   border-bottom: 1px solid #e3e3e3;
   background-color: white;
   padding: 0 2rem;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 .recommend .title {
   width: 100%;
   height: 5rem;
   border-bottom: 1px solid #e3e3e3;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-align-items: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 .recommend .title h2 {
@@ -302,10 +382,14 @@ body {
   width: 100%;
 }
 .recommend .content li {
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding: 2rem 0;
   height: 17rem;
   width: 100%;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
   display: flex;
   position: relative;
   border-bottom: 1px solid #d9d9d9;
@@ -324,13 +408,20 @@ body {
   font-weight: normal;
   white-space: nowrap;
   overflow: hidden;
+  -o-text-overflow: ellipsis;
   text-overflow: ellipsis;
   margin-bottom: 0.5rem;
   font-size: 1.6rem;
 }
 .recommend .content li .right .bt {
   font-size: 1.2rem;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-justify-content: space-between;
+  -moz-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 .recommend .content li .right .bt .int .p1 {
@@ -370,7 +461,13 @@ body {
   left: 0rem;
   width: 100%;
   height: 2.5rem;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-align-items: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   text-indent: 2rem;
   font-size: 1.2rem;
@@ -380,6 +477,9 @@ body {
   position: absolute;
   top: 9.5rem;
   left: 10.5rem;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
   display: flex;
   color: #92a0b2;
 }
@@ -392,7 +492,13 @@ body {
 .recommend .content li:last-child {
   height: 2.5rem;
   border-bottom: none;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-justify-content: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   border: none;
   font-size: 1.4rem;

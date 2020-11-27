@@ -25,8 +25,13 @@ $(function(){
                 document.body.removeEventListener('touchmove',releaseScroll);
             }else{
                 //板块出现
-                $('.down').hide();
-                $('.down').eq(index).slideDown('fast');
+                if($('.down').is(':visible')){
+                    $('.down').hide();
+                    $('.down').eq(index).show();
+                }else{
+                    $('.down').hide();
+                    $('.down').eq(index).slideDown('fast');
+                }
                 $('.hid').fadeIn('fast');
                  //箭头改变
                  $('.up').hide();
